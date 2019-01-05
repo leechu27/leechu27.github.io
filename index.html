@@ -1,9 +1,56 @@
 <!DOCTYPE html>
+  <!--
+  Name: Chun Ho Lee
+  Description: This is the html file for my website.
+  -->
  <html>
+  <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+  <style>
+   .my_text {
+     color: orange;
+     font-size: 30px;
+    }
+    p {
+     font-family: 'Charm', monospace;
+     text-align: center;
+    }
+    h2 {
+      font-family: monospace;
+      font-size: 40px;
+      text-align: center;
+    }
+    .image_size {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+    }
+    .blue_border{
+      border-color: blue;
+      border-width: 5px;
+      border-style: solid;
+      border-radius: 50%;
+    }
+    .silver_background {
+      background-color: silver;
+    }
+    .yellow-box {
+     background-color: yellow;
+     padding: 10px;
+     margin: 20px;
+    }
+  </style>
   <title> Chun Ho Lee </title>
   <main>
-  <p>
-  Hello! This <a href="#"> website</a> is a work in progress.
+  <div class="blue_border yellow-box">
+  <p class="my_text">
+  Hello! This <a href="#" target="_blank"> website</a> is a work in progress.
+  </p>
+  </div>
+  <div class="silver_background">
+  <h2> My school</h2> 
+  <p style="color: blue;">
+  UTSC
   </p>
 
 
@@ -11,8 +58,11 @@
 
   <a href="https://www.utsc.utoronto.ca/home/">
   <img src="https://pbs.twimg.com/profile_images/545315956784787456/apJm4iQ4_400x400.png"
-       alt="picture of UTSC">
+       alt="picture of UTSC"
+       class="image_size blue_border"
+       >
   </a>
+  </div>
   </main>
  </html>
 
