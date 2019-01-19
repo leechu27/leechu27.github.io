@@ -3,11 +3,17 @@
 Name: Chun Ho Lee
 Description: This is the html file for my personal website.
 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <html>
 	<style>
 		h1 {
 			font-family: cursive;
 			color: yellow;
+		}
+		p {
+			font-family: "Times New Roman";
 		}
 		.img-size {
 			width: 175px;
@@ -17,7 +23,14 @@ Description: This is the html file for my personal website.
 			border-color: black;
 			border-width: 1px;
 			border-style: solid;
-			border-radius: 100%;
+			border-radius: 48%;
+		}
+		
+		.my-background {
+			background-image: url('images/76YS.gif');
+		}
+		.container-background {
+			background-color: silver;
 		}
 	</style>
 
@@ -28,33 +41,54 @@ Description: This is the html file for my personal website.
 
 
 
-	<body style ="background-color:silver">
-		<main class="intro">
-			<div>
+	<body class="my-background">
+		<main>
+			<div class="container">
 				<h1> Introduction </h1>
 
+				<div class="jumbotron container-background">
 
-				<img src="https://i.imgur.com/lFNykhG.png"
-				alt="A picture of me." 
-				class="img-size round-border">
-				<p> Hi! My name is Chun Ho Lee and I'm a third year Computer Science
- 				    student currently seeking a co-op placement.
-				</p>
+				
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<img src="https://i.imgur.com/lFNykhG.png"
+						alt="A picture of me." 
+						class="img-size round-border">
+					</div>
+				
+					<div >
+						<p> Hi! My name is Chun Ho Lee and I'm a third year Computer Science
+		 				    student currently seeking a co-op placement.
+						</p>
+					</div>
+				
+					<div >				 
+						<br>
+						<p>
+						<a href="https://github.com/leechu27" class = "btn btn-default btn-lg" role="button 							target="_blank">Github</a>
+						<a href="#education" class = "btn btn-default btn-lg" role="button">Education</a>
+
+						<a href="#projects" class = "btn btn-default btn-lg" role="button">Projects</a>
+				
+						</p>
+					</div>
+
+				</div>
 			
 			
 			</div>
 		
-			<div>
-				<h1> Education </h1>
+			<div class="container">
+				<h1 id="education"> Education </h1>
+				<div class="jumbotron container-background">
 				<p> I attend the 
 					<a href="https://www.utsc.utoronto.ca/home/" target="_blank">
 						 University of Toronto at Scarborough</a>.
 				</p>
-				<img src="https://i.imgur.com/ttwIou0.jpg"
-				alt="A picture of the UTSC logo."
-				class="img-size round-border">
-				<p> 
-		                My completed courses so far are: <br>
+				
+
+				<div>
+				<a href="#courses" data-toggle="collapse"><p>My completed courses so far:</p></a>
+				<p id="courses" class="collapse"> 
 				CSCA20H3  Introduction to Programming           <br>
 				CSCA67H3  Discrete Mathematics                   <br>
 				CTLA01H3  Foundations in Effective Academic Communication    <br>                  
@@ -79,13 +113,19 @@ Description: This is the html file for my personal website.
 				CSCC73H3  Algorithm Design and Analysis           <br>            
 				CSCD27H3  Computer and Network Security            <br>      
 				</p>
+				</div>
+				
+				<img src="https://i.imgur.com/ttwIou0.jpg"
+				alt="A picture of the UTSC logo."
+				class="img-size round-border">
+				</div>
 			</div>
 
 
-			<div>
-				<h1> Projects </h1>
+			<div class="container">
+				<h1 id="projects"> Projects </h1>
 				
-				
+				<div class="jumbotron container-background">
 				<h2> Data Aggregation Software</h2>
 					<p>A database aggregation software completed as a team of 5.</p>
 					<li>Developed ”user friendly” interface where users can enter data into a simple
@@ -96,7 +136,8 @@ Description: This is the html file for my personal website.
                                             different levels of privileges.</li>
 					<p>Team members: Alon Djurinsky, Christopher Recillo, Chun Ho Lee, Stephen Liu, Yunan (Anny) Shi<br>
 					   Language: Java <br>
-					   <a href="https://github.com/leechu27/DataAggregationProject" target="_blank">Source Code</a></p>
+	                                <a href="https://github.com/leechu27/DataAggregationProject" class = "btn btn-default btn-lg" 							role="button" target="_blank">Source Code</a>
+					</p>
 
 				<h2> Mancala Server</h2>
 					<p>A hostable server for playing the game Mancala.</p>
@@ -104,14 +145,17 @@ Description: This is the html file for my personal website.
 					    number.</li>
 					<li>Able to join the game at any time as long as the game is not complete.</li>
 					<li>Unlimited number of players can connect and play the game.</li>
-					<p>Language: C</p>
+					<p>Language: C <br>
+	                                <a href="#" class = "btn btn-default btn-lg disabled" role="button">Source Code</a> </p>
 
 				<h2> Tower of Hanoi</h2>
 					<p>A game of Tower of Hanoi with draggable discs.</p>
 					<li>Graphic displays of stools and number of discs.</li>
 					<li>Able to pick the number of discs to initialize the game.</li>					
 					<li>Configures optimal solution to the problem at any stage of the game if user gives up.</li>
-					<p>Language: Python</p>
+					<p>Language: Python<br>
+					<a href="#" class = "btn btn-default btn-lg disabled" role="button">Source Code</a> </p>
+				</div>
 			
 			
 			</div>
@@ -119,6 +163,9 @@ Description: This is the html file for my personal website.
 
 
 		</main>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
 </html>
 
