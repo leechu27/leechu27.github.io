@@ -80,20 +80,26 @@ Description: This is the html file for my personal website.
 
 	<body class="my-background">
 		<main>
+			<!-- Carousel code -->
 			<div id="theCarousel" class="carousel slide" data-ride="carousel">
+				<!-- init 3 slides-->
 				<ol class="carousel-indicators">
 					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#theCarousel" data-slide-to="1"></li>
 					<li data-target="#theCarousel" data-slide-to="2"></li>
 				</ol>
 
+				<!-- Populate the carousel slides -->
 				<div class="carousel-inner">
+
+					<!-- Slide 1 of carousel -->
 					<div class="item active">
 						<div class="slide1"></div>
 						<div class="carousel-caption well well-background">
 						<h1> Welcome to my website!</h1>
 						<p> 
-						This website was created using technologies such as HTML5, CSS, Bootstrap, Ajax, and jQuery! </p>
+						This website was created using technologies such as HTML5, CSS, and Bootstrap.
+						Soon to include Ajax and jQuery! </p>
 						<p>
 						<a href="https://github.com/leechu27/leechu27.github.io" 
 						  class = "btn btn-default btn-lg" role="button" target="_blank">
@@ -103,7 +109,7 @@ Description: This is the html file for my personal website.
 						</div>
 					</div>
 
-
+					<!-- Slide 2 of carousel -->
 					<div class="item">
 						<div class="slide2"> </div>
 						<div class="carousel-caption well well-background">
@@ -119,7 +125,8 @@ Description: This is the html file for my personal website.
 							
 						</div>
 					</div>
-
+					
+					<!-- Slide 3 of carousel -->
 					<div class="item">
 						<div class="slide3"> </div>
 						<div class="carousel-caption well well-background">
@@ -131,6 +138,7 @@ Description: This is the html file for my personal website.
 					</div>
 				</div>
 				
+				<!-- Add arrows to navigate between slides -->
 				<a class="left carousel-control" href="#theCarousel" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span> </a>
 
@@ -139,13 +147,12 @@ Description: This is the html file for my personal website.
 				
 			</div>
 			
-			
+			<!-- Introduction portion code -->
 			<div class="container">
 				<h1 id="intro">  Introduction </h1>
 
+				<!-- Populate introduction slide. -->
 				<div class="jumbotron container-background">
-
-				
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<img src="https://i.imgur.com/lFNykhG.png"
 						alt="A picture of me." 
@@ -158,7 +165,7 @@ Description: This is the html file for my personal website.
 						    Smash Ultimate, and Epic Seven!
 						</p>
 					</div>
-				
+					<!-- Buttons with icons and text. -->
 					<div >				 
 						<br>
 						<p>
@@ -177,6 +184,7 @@ Description: This is the html file for my personal website.
 			
 			</div>
 		
+			<!-- Education portion of page. -->
 			<div class="container">
 				<h1 id="education"> Education </h1>
 				<div class="jumbotron container-background">
@@ -185,7 +193,7 @@ Description: This is the html file for my personal website.
 						 University of Toronto at Scarborough</a>.
 				</p>
 				
-
+				<!-- Toggleable list of completed courses. -->
 				<div>
 				<a href="#courses" data-toggle="collapse"><p>My completed courses so far:</p></a>
 				<p id="courses" class="collapse"> 
@@ -220,8 +228,9 @@ Description: This is the html file for my personal website.
 				class="img-size round-border">
 				</div>
 			</div>
-
-
+			
+	
+			<!-- Projects portion of page. -->
 			<div class="container">
 				<h1 id="projects"> Projects </h1>
 				
